@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const url = `${base_url}/search/movie?query=${this.search.value}&language=en-US`;
 
         // Limpiar resultados anteriores
-        search_results.innerHTML = '';
+      
 
         fetch(url, options)
             .then(res => res.json())
